@@ -5,16 +5,16 @@ C11 = 503 % 11 = 8 | Знайти середнє значення елемент
  */
 public class Main {
     public static void main(String[] args) {
-        float[][] A = {{5, -3, 8, 2},
-                       {2, 7, 1,  9},
-                       {6, 4, -2, 4}};
-        float[][] B = {{6, -2, 7},
-                       {3, 0,  4},
-                       {2, 1,  8}};
+        final float[][] A = {{5, -3, 8, 2},
+                             {2, 7, 1,  9},
+                             {6, 4, -2, 4}};
+        final float[][] B = {{6, -2, 7},
+                             {3, 0,  4},
+                             {2, 1,  8}};
 
 
-        int n = A.length + B.length;
-        int m = A[0].length + B[0].length;
+        final int n = A.length + B.length;
+        final int m = A[0].length + B[0].length;
 
         float[][] C = new float[n][m];
         for (int i = 0; i < n; i++)
