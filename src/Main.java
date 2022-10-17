@@ -12,6 +12,8 @@ public class Main {
                              {3, 0,  4},
                              {2, 1,  8}};
 
+        MatrixCheck(A);
+        MatrixCheck(B);
 
         final int n = A.length + B.length;
         final int m = A[0].length + B[0].length;
@@ -44,6 +46,16 @@ public class Main {
             }
             avg /= m;
             System.out.printf("%d Рядок: %.2f\n",(i + 1), avg);
+        }
+    }
+    public static void MatrixCheck(float[][] Matrix){
+        int row_length = Matrix[0].length;
+
+        for (int i = 0; i < Matrix.length; i++){
+            if (Matrix[i].length != row_length){
+                System.out.println("Некоректно введена матриця");
+                System.exit(0);
+            }
         }
     }
 }
